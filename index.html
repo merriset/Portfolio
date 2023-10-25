@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hello, I'm Peter Nelson</title>
     <link rel="stylesheet" href="./style.css">
 
@@ -34,7 +36,17 @@
         }
 
         function pageScroll(idTag) {
-            document.getElementById(idTag).scrollIntoView({behavior: "smooth"});
+            const banner = document.getElementById("linkBanner");
+            const target = document.getElementById(idTag);
+            const offset = -(banner.offsetHeight);
+
+            let y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+            if(document.documentElement.scrollTop.toFixed() < 500)
+            {
+                y += offset;
+            }
+            window.scrollTo({top: y, behavior: 'smooth'});
+
         }
     </script>
 
@@ -42,7 +54,7 @@
     <div id="linkBanner">
         <button class="link" onclick="pageScroll('about')">About Me</button>
         <div class="link"><a href="./contact.html">Resume</a></div>
-        <div class="link"><a href="./webgpu.html">Projects</a></div>
+        <button class="link" onclick="pageScroll('projects')">Projects</button>
         <div class="link"><a href="./tools.html">Contact</a></div>
         <div class="link"><a href="./index.html">Return to Top</a></div>
     </div>
@@ -57,8 +69,35 @@
     <div id="about">
         <h1>This is about me</h1>
     </div>
-
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
     <div id="projects">
+    </div>
+
+    
+
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
     </div>
 
 
