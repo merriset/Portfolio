@@ -6,9 +6,9 @@ a {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.greetingBanner {
+#greetingBanner {
     width: 100vw;
-    height: 50vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,15 +48,18 @@ html {
     padding: 40px;
 }
 
-.linkBanner {
+#linkBanner {
     display: flex;
     justify-content: center;
+    top: 0;
+    width: 100vw;
+    position: relative;
 }
 
 main {
     background-color: rgb(253, 253, 242);
     width: auto;
-    height: auto;
+    height: 2000px;
 }
 
 
