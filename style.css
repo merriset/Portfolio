@@ -1,9 +1,18 @@
 a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
-    text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+}
+
+#about {
+    height: 300px;
+    width: 100vw;
+    background-color: blue;
+}
+
+#test {
+    height: 300px;
+    width: 100vw;
+    background-color:aqua;
 }
 
 #greetingBanner {
@@ -26,6 +35,7 @@ h2 {
     font-family: 'Josefin Sans', sans-serif;
     color: azure;
     font-size: 2rem;
+    font-weight: 50;
     margin: 10;
 }
 
@@ -45,12 +55,23 @@ html {
 
 .link {
     display: inline-block;
-    padding: 40px;
+    border: none;
+    font-size: 1rem;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #linkBanner {
     display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(253, 253, 242);
+    margin: 0;
     justify-content: center;
+    align-items: center;
     top: 0;
     width: 100vw;
     position: relative;

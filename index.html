@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap" rel="stylesheet">
 </head>
 <body onscroll="scrollWitness()">
+
     <div id="greetingBanner">
         <h2>Hello, I'm</h2>
         <h1>Peter Nelson</h1>
@@ -24,28 +25,44 @@
             const element = document.documentElement;
             const transformTarget = document.getElementById("linkBanner");
             let y = element.scrollTop;
-            console.log(y.toFixed());
             if(y.toFixed() > 500) {
                 transformTarget.style.position = "fixed";
-                console.log("Transformed");
             }
             else {
                 transformTarget.style.position = "relative";
             }
         }
+
+        function pageScroll(idTag) {
+            document.getElementById(idTag).scrollIntoView({behavior: "smooth"});
+        }
     </script>
 
     <main>
     <div id="linkBanner">
-        <div class="link"><a href="./index.html">Home</a></div>
-        <div class="link"><a href="./resume.html">Resume</a></div>
-        <div class="link"><a href="./contact.html">Contact</a></div>
-        <div class="link"><a href="./webgpu.html">WebGPU</a></div>
-        <div class="link"><a href="./tools.html">Tools</a></div>
+        <button class="link" onclick="pageScroll('about')">About Me</button>
+        <div class="link"><a href="./contact.html">Resume</a></div>
+        <div class="link"><a href="./webgpu.html">Projects</a></div>
+        <div class="link"><a href="./tools.html">Contact</a></div>
+        <div class="link"><a href="./index.html">Return to Top</a></div>
     </div>
 
-    
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+    <div id="test">
+    </div>
+
+    <div id="about">
+        <h1>This is about me</h1>
+    </div>
+
+    <div id="projects">
+    </div>
+
+
     </main>
-    
+
 </body>
 </html>
