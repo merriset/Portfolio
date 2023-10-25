@@ -9,10 +9,6 @@ a {
     background-color: blue;
 }
 
-button {
-    background-color: rgb(253, 253, 242);
-}
-
 #projects {
     height: 430px;
     width: calc(100vw - (100vw - 100%));
@@ -70,6 +66,7 @@ html {
 }
 
 .link {
+    background-color: none;
     display: inline-block;
     border: none;
     padding: 25px;
