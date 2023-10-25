@@ -9,18 +9,11 @@ function mobileCheck() {
     || navigator.userAgent.match(/BlackBerry/i)
     || navigator.userAgent.match(/Windows Phone/i)) 
     {
-        a = true ;
         const links = document.getElementsByClassName("link");
         for (let i = 0; i < links.length; i++) {
-            links[i].style.backgroundColor = "red";
+            links[i].style.fontSize = "small";
         }
-
-
     } 
-    else 
-    {
-        a = false ;
-    }
 }
 
 
