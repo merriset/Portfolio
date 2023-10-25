@@ -60,7 +60,7 @@ h3 {
 }
 
 html {
-    background-color: #454545;
+    background-color: #e82121;
     background: url("./assets/portrait.jpg") no-repeat center center fixed;
     background-size: cover;
 }
@@ -78,7 +78,6 @@ html {
 
 .link:hover, a:hover {
     font-weight: bold;
-    color: rgb(0, 0, 0);
 }
 
 #linkBanner {
