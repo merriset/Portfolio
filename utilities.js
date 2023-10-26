@@ -23,6 +23,10 @@ window.onload = function mobileCheck() {
         for (let i = 0; i < h2s.length; i++) {
             h2s[i].style.fontSize = "1rem";
         }
+
+        const portrait = document.getElementById("portrait");
+        portrait.style.gridColumn = "1 / span 2";
+        portrait.style.gridRow = "3 / 3"
     } 
 }
 
