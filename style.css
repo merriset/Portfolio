@@ -49,7 +49,7 @@ body {
 #greetingBanner {
     margin: 0;
     width: calc(100vw - (100vw - 100%));
-    height: 25vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
