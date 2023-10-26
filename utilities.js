@@ -1,6 +1,6 @@
-window.onload = 
 
-function mobileCheck() {
+
+window.onload = function mobileCheck() {
     if (navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
     || navigator.userAgent.match(/iPhone/i)
@@ -12,7 +12,11 @@ function mobileCheck() {
         const links = document.getElementsByClassName("link");
         for (let i = 0; i < links.length; i++) {
             links[i].style.fontSize = "small";
-            
+        }
+
+        const h1s = document.getElementsByTagName("h1");
+        for (let i = 0; i < h1s.length; i++) {
+            h1s[i].style.fontSize = "3rem";
         }
     } 
 }
