@@ -28,6 +28,7 @@ window.onload = function mobileCheck() {
         portrait.style.gridColumn = "1 / span 2";
         portrait.style.gridRow = "3 / 3"
     } 
+
 }
 
 
