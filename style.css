@@ -29,7 +29,7 @@ body {
 #greetingBanner {
     margin: 0;
     width: calc(100vw - (100vw - 100%));
-    height: 500px;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +103,12 @@ main {
 
 #nameImage {
     height: auto;
-    width: 50vw;
+    width: 52vw;
+}
+
+#portrait {
+    height: auto;
+    width: 20vw;
 }
 
 
