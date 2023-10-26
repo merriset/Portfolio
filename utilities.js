@@ -24,13 +24,16 @@ window.onload = function mobileCheck() {
 
 
 function scrollWitness() {
-    const element = document.documentElement;
     const transformTarget = document.getElementById("linkBanner");
-    let y = element.scrollTop;
-    if(y.toFixed() > 500) {
+    let top = transformTarget.getBoundingClientRect().top;
+
+    const greet = document.getElementById("greetingBanner");
+    let line = greet.getBoundingClientRect().bottom;
+
+    if(top.toFixed() <= 0) {
         transformTarget.style.position = "fixed";
     }
-    else {
+    if(line.toFixed() >= 0) {
         transformTarget.style.position = "relative";
     }
 }
