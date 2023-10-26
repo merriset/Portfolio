@@ -18,6 +18,11 @@ window.onload = function mobileCheck() {
         for (let i = 0; i < h1s.length; i++) {
             h1s[i].style.fontSize = "3rem";
         }
+
+        const h2s = document.getElementsByTagName("h2");
+        for (let i = 0; i < h1s.length; i++) {
+            h1s[i].style.fontSize = "1rem";
+        }
     } 
 }
 
