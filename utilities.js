@@ -20,8 +20,8 @@ window.onload = function mobileCheck() {
         }
 
         const h2s = document.getElementsByTagName("h2");
-        for (let i = 0; i < h1s.length; i++) {
-            h1s[i].style.fontSize = "1rem";
+        for (let i = 0; i < h2s.length; i++) {
+            h2s[i].style.fontSize = "1rem";
         }
     } 
 }
