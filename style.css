@@ -22,15 +22,11 @@ a {
 }
 
 #aboutText {
-    grid-column: 2;
-    grid-row-start: 2;
-    background-color: rgb(255, 255, 255);
-    color: rgb(26, 26, 26);
-    width: 60vw;
-    height: auto;
-    text-align: center;
-    margin-left: auto;
-    margin-right: 2vw;
+    grid-column: 2 / 2;
+    grid-row: 2 / span 1;
+    padding-left: 50px; 
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 body {
@@ -179,9 +175,8 @@ main {
 
 p {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin: 10px 20px 50px 0;
     text-align: center;
 }
 

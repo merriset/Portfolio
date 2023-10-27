@@ -43,7 +43,6 @@ window.onresize = function rsize() {
         header.style.gridColumn = "1 / span 2";
 
         par.style.gridColumn = "1 / span 2";
-        par.style.marginRight = "auto";
     }
     else {
         portrait.style.gridColumn = "1 / 1";
@@ -54,8 +53,7 @@ window.onresize = function rsize() {
 
         header.style.gridColumn = "2 / 2";
 
-        par.style.gridColumn = "1 / span 2";
-        par.style.marginRight = "2vw";
+        par.style.gridColumn = "2 / 2";
 
     }
 }
