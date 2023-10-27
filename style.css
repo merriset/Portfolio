@@ -9,14 +9,14 @@ a {
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 35vw auto;
-    grid-template-rows: 10vh auto auto;
+    grid-template-rows: 8vh auto auto;
     align-items: center;
-    gap: 20px 20px;
 }
 
 #aboutHeader {
     grid-column-start: 2;
     grid-row-start: 1;
+    margin: 60px 30px 0px 30px;
 }
 
 #aboutText {
@@ -27,6 +27,8 @@ a {
     width: 60vw;
     height: auto;
     text-align: center;
+    margin-left: auto;
+    margin-right: 2vw;
 }
 
 #projects {
@@ -69,7 +71,7 @@ h2 {
     font-family: 'Courgette', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 2rem;
-    margin-top: 50px 30px 20px 50px;
+    margin: 0;
 }
 
 h3 {
@@ -140,6 +142,8 @@ p {
     height: auto;
     width: 30vw;
     padding: 4vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

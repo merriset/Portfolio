@@ -24,13 +24,41 @@ window.onload = function mobileCheck() {
             h2s[i].style.fontSize = "1rem";
         }
 
-        const portrait = document.getElementById("portrait");
-        portrait.style.gridColumn = "1 / span 2";
-        portrait.style.gridRow = "3 / 3"
-    } 
+    }
 
 }
 
+window.onresize = function rsize() {
+    const portrait = document.getElementById("portrait");
+    const header = document.getElementById("aboutHeader");
+    const par = document.getElementById("aboutText");
+
+    if(window.innerWidth.toFixed() < 1000) {
+        portrait.style.gridColumn = "1 / span 2";
+        portrait.style.gridRow = "3 / 3"
+        portrait.style.width = "60vw"
+        portrait.style.marginLeft = "auto";
+        portrait.style.marginRight = "auto";
+
+        header.style.gridColumn = "1 / span 2";
+
+        par.style.gridColumn = "1 / span 2";
+        par.style.marginRight = "auto";
+    }
+    else {
+        portrait.style.gridColumn = "1 / 1";
+        portrait.style.gridRow = "1/ span 2"
+        portrait.style.width = "30vw"
+        portrait.style.marginLeft = "auto";
+        portrait.style.marginRight = "auto";
+
+        header.style.gridColumn = "2 / 2";
+
+        par.style.gridColumn = "1 / span 2";
+        par.style.marginRight = "2vw";
+
+    }
+}
 
 
 function scrollWitness() {
