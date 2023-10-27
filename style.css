@@ -168,7 +168,7 @@ p {
 #projects {
     height: auto;
     width: calc(100vw - (100vw - 100%));
-    background-color: rgb(218, 34, 129);
+    background-color: rgb(255, 255, 255);
 }
 
 
