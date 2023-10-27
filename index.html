@@ -104,8 +104,89 @@
         <h1>Projects</h1>
         <div id="projectContainer">
             <div class="project" id="webGPU">
+                <img src="./assets/webGPU.png" alt="webGPU logo" style="margin: 60px auto 20px auto; display: block; height: auto; width: 180px;">
+                <h2 style="font-family: Noto Sans;">Research and Application</h2>
+                <h3><a href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
+                <button type="button" class="collapse"> 
+                    What is webGPU? Click Here
+                </button> 
+                <div class="content">
+                    <p style="padding: 30px 3vw 3vw 30px;">
+                        WebGPu is a new <strong>3d graphics and GPU compute API</strong>. It was developed cooperatively by many organizations, 
+                        including Google, Mozilla and Apple with the aim to deliver improved performance and accessibility compared 
+                        to the OpenGL and WebGL APIs.<br><br> WebGPU functions as an interface between the host system’s GPU and the 
+                        developer, allowing for <strong>compute and render commands</strong> to be sent to the GPU from native apps and web browsers. 
+                        It has many exciting applications in game engines, web development, machine learning, data visualization, and more.<br><br>
+                        For more information, try this link: <a style="text-decoration: underline;" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">Mozilla WebGPU Documentation</a>
+                    </p>  
+                </div>
+
+                <script>
+                    var btn = document.getElementsByClassName("collapse");
+                    btn[0].addEventListener("click", function () { 
+                        this.classList.toggle("active"); 
+                        var content = this.nextElementSibling; 
+                        if (content.style.display === "block") { 
+                            content.style.display = "none"; 
+                        } else { 
+                            content.style.display = "block"; 
+                        } 
+                    }); 
+
+                </script>
                 
+                <p style="padding: 0 3vw 3vw 3vw;">
+                    I began a research project in cooperation with the University of Oregon computer science department with the goal 
+                    of evaluating webGPU’s capabilities as a <strong>data visualization medium</strong>. The project is on-going, and now that I have 
+                    graduated, I am planning to take webGPU further as a full web application. My personal project now in development 
+                    is a webGPU <strong>3d painting program</strong>. The user will input a 3d object, and texture the object with a digital brush. 
+                    <br><br>I have already learned a lot about graphics pipelines, web development and 3d conventions from this project, 
+                    and I am excited to see the completed application.  
+                </p>
             </div>
+
+
+            <!-- <div class="project" id="Rasterizer">
+                <img src="./assets/webGPU.png" alt="webGPU logo" style="margin: 60px auto 20px auto; display: block; height: auto; width: 180px;">
+                <h2 style="font-family: Noto Sans;">Research and Application</h2>
+                <h3><a href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
+                <button type="button" class="collapse"> 
+                    What is webGPU? Click Here
+                </button> 
+                <div class="content">
+                    <p style="padding: 30px 3vw 3vw 30px;">
+                        WebGPu is a new <strong>3d graphics and GPU compute API</strong>. It was developed cooperatively by many organizations, 
+                        including Google, Mozilla and Apple with the aim to deliver improved performance and accessibility compared 
+                        to the OpenGL and WebGL APIs.<br><br> WebGPU functions as an interface between the host system’s GPU and the 
+                        developer, allowing for <strong>compute and render commands</strong> to be sent to the GPU from native apps and web browsers. 
+                        It has many exciting applications in game engines, web development, machine learning, data visualization, and more.<br><br>
+                        For more information, try this link: <a style="text-decoration: underline;" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">Mozilla WebGPU Documentation</a>
+                    </p>  
+                </div>
+
+                <script>
+                    var btn = document.getElementsByClassName("collapse");
+                    btn[0].addEventListener("click", function () { 
+                        this.classList.toggle("active"); 
+                        var content = this.nextElementSibling; 
+                        if (content.style.display === "block") { 
+                            content.style.display = "none"; 
+                        } else { 
+                            content.style.display = "block"; 
+                        } 
+                    }); 
+
+                </script>
+                
+                <p style="padding: 0 3vw 3vw 3vw;">
+                    I began a research project in cooperation with the University of Oregon computer science department with the goal 
+                    of evaluating webGPU’s capabilities as a <strong>data visualization medium</strong>. The project is on-going, and now that I have 
+                    graduated, I am planning to take webGPU further as a full web application. My personal project now in development 
+                    is a webGPU <strong>3d painting program</strong>. The user will input a 3d object, and texture the object with a digital brush. 
+                    <br><br>I have already learned a lot about graphics pipelines, web development and 3d conventions from this project, 
+                    and I am excited to see the completed application.  
+                </p>
+            </div> -->
         </div>
     </div>
 
