@@ -44,7 +44,7 @@
         <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('about')">About Me</button>
         <div class="link"><a href="./resume.html">Resume</a></div>
         <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('projects')">Projects</button>
-        <div class="link"><a href="./tools.html">Contact</a></div>
+        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('contact')">Contact Me</button>
         <div class="link"><a href="./index.html">Return to Top</a></div>
     </div>
 
@@ -64,7 +64,6 @@
 
 
     <div id="certs">
-        <h1>Experiences</h1>
         <div id="certContainer">
             <div class="cert">
                 <img class="certImg" src="./assets/uofo.png" alt="university of oregon logo">
@@ -72,14 +71,22 @@
             </div>
 
             <div class="cert">
-                <img class="certImg" src="./assets/faa.png" alt="FAA logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Finished flight school with an ASEL Private Pilot's Certificate</strong></p>
+                <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/freeport.png" alt="freeport bakery logo">
+                <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/brick.png" alt="brickmaiden breads logo">
+                <p style="color: rgb(1, 81, 0);"><strong>Professional Bakery Experience</strong></p>
             </div>
 
             <div class="cert">
                 <img class="certImg" src="./assets/arc.png" alt="american river college logo">
                 <p style="color: rgb(1, 81, 0);"><strong>Completed an Associate's degree in the field of Electrical Systems Technology</strong></p>
             </div>
+
+            <div class="cert">
+                <img class="certImg" src="./assets/faa.png" alt="FAA logo">
+                <p style="color: rgb(1, 81, 0);"><strong>Finished flight school with an ASEL Private Pilot's Certificate</strong></p>
+            </div>
+
+            
 
             <div class="cert">
                 <img class="certImg" src="./assets/goethe.png" alt="goethe logo">
@@ -90,24 +97,16 @@
                 <img class="certImg" src="./assets/Diver-flag-with-black-diver.png" alt="diving flag">
                 <p style="color: rgb(1, 81, 0);"><strong>Aquired the PADI Open Water Diver certification</strong></p>
             </div>
-
-            <div class="cert">
-                <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/freeport.png" alt="freeport bakery logo">
-                <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/brick.png" alt="brickmaiden breads logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Professional Bakery Experience</strong></p>
-            </div>
             
         </div>
     </div>
 
-
     <div id="projects">
-        <h1>Projects</h1>
         <div id="projectContainer">
-            <div class="project" id="webGPU">
+            <div class="project">
                 <img src="./assets/webGPU.png" alt="webGPU logo" style="margin: 60px auto 20px auto; display: block; height: auto; width: 180px;">
                 <h2 style="font-family: Noto Sans;">Research and Application</h2>
-                <h3><a href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
+                <h3><a style="color: red;" href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
                 <button type="button" class="collapse"> 
                     What is webGPU? Click Here
                 </button> 
@@ -136,59 +135,44 @@
 
                 </script>
                 
-                <p style="padding: 0 3vw 3vw 3vw;">
-                    I began a research project in cooperation with the University of Oregon computer science department with the goal 
-                    of evaluating webGPU’s capabilities as a <strong>data visualization medium</strong>. The project is on-going, and now that I have 
-                    graduated, I am planning to take webGPU further as a full web application. My personal project now in development 
-                    is a webGPU <strong>3d painting program</strong>. The user will input a 3d object, and texture the object with a digital brush. 
-                    <br><br>I have already learned a lot about graphics pipelines, web development and 3d conventions from this project, 
-                    and I am excited to see the completed application.  
-                </p>
+                <ul style="margin: 30px auto 30px auto; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; background-color: white;">
+                    <li>Research project in cooperation with the University of Oregon CS department (Summer 2023)</li>
+                    <li>Goal of evaluating webGPU’s capabilities as a <strong>data visualization medium</strong></li>
+                    <li>Project is on-going, I will take webGPU further as a full web application</li>
+                    <li>Planned Expansion: webGPU <strong>3d painting program</strong></li>
+                    <li>The user will input a 3d object, and texture the object with a digital brush</li>
+                    <li>Exploration of <strong>webGPU, javascript, 3d and 2d graphics pipelines, GPU compute</strong></li>
+                </ul>  
             </div>
 
+            <div class="project">
+                <br><br><br><br>
+                <h2 style="font-family: Noto Sans;">Rasterizer in C</h2>
+                <h3><a style="color: red;" href="https://bitbucket.org/trimercade/graphics">Bitbucket Link</a></h3><br>
+                <ul style="margin: 10px auto 30px auto; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; background-color: white;">
+                    <li>From scratch C language rasterizer for the purpose of 3d and 2d rendering</li>
+                    <li>Exploration of <strong>C, vector math, rasterization methodology</strong></li>
+                </ul> 
+               
+            </div>
 
-            <!-- <div class="project" id="Rasterizer">
-                <img src="./assets/webGPU.png" alt="webGPU logo" style="margin: 60px auto 20px auto; display: block; height: auto; width: 180px;">
-                <h2 style="font-family: Noto Sans;">Research and Application</h2>
-                <h3><a href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
-                <button type="button" class="collapse"> 
-                    What is webGPU? Click Here
-                </button> 
-                <div class="content">
-                    <p style="padding: 30px 3vw 3vw 30px;">
-                        WebGPu is a new <strong>3d graphics and GPU compute API</strong>. It was developed cooperatively by many organizations, 
-                        including Google, Mozilla and Apple with the aim to deliver improved performance and accessibility compared 
-                        to the OpenGL and WebGL APIs.<br><br> WebGPU functions as an interface between the host system’s GPU and the 
-                        developer, allowing for <strong>compute and render commands</strong> to be sent to the GPU from native apps and web browsers. 
-                        It has many exciting applications in game engines, web development, machine learning, data visualization, and more.<br><br>
-                        For more information, try this link: <a style="text-decoration: underline;" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">Mozilla WebGPU Documentation</a>
-                    </p>  
-                </div>
-
-                <script>
-                    var btn = document.getElementsByClassName("collapse");
-                    btn[0].addEventListener("click", function () { 
-                        this.classList.toggle("active"); 
-                        var content = this.nextElementSibling; 
-                        if (content.style.display === "block") { 
-                            content.style.display = "none"; 
-                        } else { 
-                            content.style.display = "block"; 
-                        } 
-                    }); 
-
-                </script>
-                
-                <p style="padding: 0 3vw 3vw 3vw;">
-                    I began a research project in cooperation with the University of Oregon computer science department with the goal 
-                    of evaluating webGPU’s capabilities as a <strong>data visualization medium</strong>. The project is on-going, and now that I have 
-                    graduated, I am planning to take webGPU further as a full web application. My personal project now in development 
-                    is a webGPU <strong>3d painting program</strong>. The user will input a 3d object, and texture the object with a digital brush. 
-                    <br><br>I have already learned a lot about graphics pipelines, web development and 3d conventions from this project, 
-                    and I am excited to see the completed application.  
-                </p>
-            </div> -->
+            <div class="project">
+                <br><br><br><br>
+                <h2 style="font-family: Noto Sans;">Operating Systems Projects</h2>
+                <h3><a style="color: red;" href="https://bitbucket.org/trimercade/operating-systems">Bitbucket Link</a></h3><br>
+                <ul style="margin: 10px auto 30px auto; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; background-color: white;">
+                    <li>Assigned work from Univeristy of Oregon Operating Systems course</li>
+                    <li>Exploration of <strong>C, parallel computing, OS architecture</strong></li>
+                </ul> 
+               
+            </div>
         </div>
+    </div>
+
+    <div id="contact">
+        <br><br><br><br>
+        <h2>Contact Me!</h2>
+        <h3>peternelson-work@proton.me</h3>
     </div>
 
     
