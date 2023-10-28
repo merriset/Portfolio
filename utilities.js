@@ -35,7 +35,7 @@ window.onresize = function rsize() {
 
     if(window.innerWidth.toFixed() < 1000) {
         portrait.style.gridColumn = "1 / span 2";
-        portrait.style.gridRow = "3 / 3"
+        portrait.style.gridRow = "4 / 4"
         portrait.style.width = "60vw"
         portrait.style.marginLeft = "auto";
         portrait.style.marginRight = "auto";
@@ -43,10 +43,11 @@ window.onresize = function rsize() {
         header.style.gridColumn = "1 / span 2";
 
         par.style.gridColumn = "1 / span 2";
+        par.style.paddingTop = "50px";
     }
     else {
         portrait.style.gridColumn = "1 / 1";
-        portrait.style.gridRow = "1/ span 2"
+        portrait.style.gridRow = "2 / span 2"
         portrait.style.width = "30vw"
         portrait.style.marginLeft = "auto";
         portrait.style.marginRight = "auto";
@@ -54,6 +55,7 @@ window.onresize = function rsize() {
         header.style.gridColumn = "2 / 2";
 
         par.style.gridColumn = "2 / 2";
+        par.style.paddingTop = "0px";
 
     }
 }
