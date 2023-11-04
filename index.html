@@ -27,20 +27,20 @@
 
     
 </head>
-<body onscroll="scrollWitness()">
+<body onscroll="scrollWitness()" onload="loadRSize()">
 
-    <div id="greetingBanner">
-        <h1>PETER</h1>
-        <h1 style="font-family: Lexend, sans-serif;">NELSON</h1>
+    <div id="portraitBanner">
+        <div id="nameHeader">
+            <h1>PETER</h1>
+            <h1 style="font-family: Lexend, sans-serif;">NELSON</h1>
+        </div>
     </div>
 
     <main>
     <div id="linkBanner">
-        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('about')">About Me</button>
-        <div class="link"><a href="./resume.html">Resume</a></div>
-        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('projects')">Projects</button>
-        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('contact')">Contact Me</button>
-        <div class="link"><a href="./index.html">Return to Top</a></div>
+        <div class="link"><a href="./resume.html">RESUME</a></div>
+        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('projects')">PROJECTS</button>
+        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('contact')">CONTACT</button>
     </div>
 
     <div id="about">

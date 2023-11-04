@@ -29,43 +29,44 @@ window.onload = function mobileCheck() {
 }
 
 window.onresize = function rsize() {
-    const portrait = document.getElementById("portrait");
-    const header = document.getElementById("aboutHeader");
-    const par = document.getElementById("aboutText");
 
-    if(window.innerWidth.toFixed() < 1000) {
-        portrait.style.gridColumn = "1 / span 2";
-        portrait.style.gridRow = "4 / 4"
-        portrait.style.width = "60vw"
-        portrait.style.marginLeft = "auto";
-        portrait.style.marginRight = "auto";
+    const banner = document.getElementById("portraitBanner");
+    const name = document.getElementById("nameHeader");
 
-        header.style.gridColumn = "1 / span 2";
-
-        par.style.gridColumn = "1 / span 2";
-        par.style.paddingTop = "50px";
+    if(window.innerWidth.toFixed() < 820) {
+        banner.style.backgroundSize = "150vw";
+        banner.style.height = "100px";
+        name.style.top = "70%"
     }
     else {
-        portrait.style.gridColumn = "1 / 1";
-        portrait.style.gridRow = "2 / span 2"
-        portrait.style.width = "30vw"
-        portrait.style.marginLeft = "auto";
-        portrait.style.marginRight = "auto";
-
-        header.style.gridColumn = "2 / 2";
-
-        par.style.gridColumn = "2 / 2";
-        par.style.paddingTop = "0px";
-
+        banner.style.backgroundSize = "100vw"
+        banner.style.height = "0";
+        name.style.top = "50%"
     }
 }
 
+
+function loadRSize() {
+    const banner = document.getElementById("portraitBanner");
+    const name = document.getElementById("nameHeader");
+
+    if(window.innerWidth.toFixed() < 820) {
+        banner.style.backgroundSize = "150vw";
+        banner.style.height = "100px";
+        name.style.top = "70%"
+    }
+    else {
+        banner.style.backgroundSize = "100vw"
+        banner.style.height = "0";
+        name.style.top = "50%"
+    }
+}
 
 function scrollWitness() {
     const transformTarget = document.getElementById("linkBanner");
     let top = transformTarget.getBoundingClientRect().top;
 
-    const greet = document.getElementById("greetingBanner");
+    const greet = document.getElementById("portraitBanner");
     let line = greet.getBoundingClientRect().bottom;
 
     if(top.toFixed() <= 0) {
