@@ -1,6 +1,14 @@
 
 
-window.onload = function mobileCheck() {
+window.onload = init;
+
+function init() {
+    mobileCheck();
+    rsize();
+}
+
+
+function mobileCheck() {
     if (navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
     || navigator.userAgent.match(/iPhone/i)
@@ -28,37 +36,30 @@ window.onload = function mobileCheck() {
 
 }
 
-window.onresize = function rsize() {
+window.onresize = rsize;
 
+function rsize() {
+
+    console.log("Here");
     const banner = document.getElementById("portraitBanner");
     const name = document.getElementById("nameHeader");
 
     if(window.innerWidth.toFixed() < 820) {
         banner.style.backgroundSize = "150vw";
         banner.style.height = "100px";
-        name.style.top = "70%"
+        name.style.top = "70%";
     }
+
+    else if(window.innerWidth.toFixed() > 1300) {
+        banner.style.paddingTop = "45%";
+        name.style.top = "70%";
+    }
+
     else {
         banner.style.backgroundSize = "100vw"
         banner.style.height = "0";
-        name.style.top = "50%"
-    }
-}
-
-
-function loadRSize() {
-    const banner = document.getElementById("portraitBanner");
-    const name = document.getElementById("nameHeader");
-
-    if(window.innerWidth.toFixed() < 820) {
-        banner.style.backgroundSize = "150vw";
-        banner.style.height = "100px";
-        name.style.top = "70%"
-    }
-    else {
-        banner.style.backgroundSize = "100vw"
-        banner.style.height = "0";
-        name.style.top = "50%"
+        name.style.top = "50%";
+        banner.style.paddingTop = "66.66%";
     }
 }
 

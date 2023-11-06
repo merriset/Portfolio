@@ -3,31 +3,25 @@ a {
     color: black;
 }
 
-#about {
+#aboutBanner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
     height: auto;
     width: calc(100vw - (100vw - 100%));
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: 35vw auto;
-    grid-template-rows: 30px 8vh auto auto;
-    align-items:center;
+    background-color: rgb(39, 39, 39);
+    color: rgb(224, 224, 224);
 }
 
-#aboutHeader {
-    grid-column: 2 / span 1;
-    grid-row:  2 / span 1;
-    background-color: #ffffff;
-    padding: 90px 10px 20px 10px;
-
+.abBannImg {
+    width: 70px;
 }
 
 #aboutText {
-    grid-column: 2 / 2;
-    grid-row: 3 / span 1;
-    padding-left: 50px; 
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px 30px 0 30px;
 }
 
 body {
@@ -40,6 +34,7 @@ body {
     width: 400px;
     height: auto;
     text-align: center;
+    padding: 40px;
 }
 
 .certImg {
@@ -47,13 +42,6 @@ body {
     width: 160px;
     height: auto;
     margin: 10px auto 10px auto;
-}
-
-#certs {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-    width: calc(100vw - (100vw - 100%));
-    padding-bottom: 40px;
 }
 
 #certContainer {
@@ -64,11 +52,14 @@ body {
     margin: 0 2vw 0 2vw;
     background-color: #ffffff; 
     height: auto;
-    width: auto;
+    width: calc(100vw - (100vw - 100%));
+    padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 #contact {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+    color: rgb(224, 224, 224);
     width: calc(100vw - (100vw - 100%));
     height: 200px;
     padding-bottom: 100px;
@@ -77,19 +68,19 @@ body {
 .content {
     padding: 0 18px;
     display: none;
-    background-color: #dadada;
+    color: rgb(224, 224, 224);
 }
 
 .collapse {
-    background-color: #e8d7d7;
     text-decoration: none;
     border: none;
     text-align: center;
     display: block;
     margin: 0 auto 0px auto;
-    width: calc(100vw - (100vw - 100%));
+    width: auto;
     height: 60px;
     font-size: 1.3rem;
+    background-color: rgb(51, 121, 213);
 }
 
 .project .header {
@@ -129,18 +120,17 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: 'Sarabun', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1.4rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.8rem;
     margin: 0;
 }
 
 h3 {
     text-align: center; 
     font-size: 1.5rem; 
-    color: rgb(134, 13, 0); 
-    font-family:'Franklin Gothic Medium', sans-serif;
-    font-weight: 300;
+    color: rgb(211, 169, 165); 
+    font-family:'Lexend', sans-serif;
+    font-weight: 600;
     margin: 0 auto 10px auto;
 }
 
@@ -185,9 +175,9 @@ main {
 }
 
 p {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -202,9 +192,10 @@ p {
 #projects {
     height: auto;
     width: calc(100vw - (100vw - 100%));
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 40px;
-    background-color: #ececec;
+    background-color: #d9d9d9;
+    background: linear-gradient(to bottom right, rgb(38, 38, 182), rgb(122, 62, 72));
 }
 
 #projectContainer {
@@ -215,6 +206,13 @@ p {
         margin: 0px 2vw 0 2vw;
         height: auto;
         width: auto;
+}
+
+ul {
+    font-family: 'Lexend', sans-serif;
+    color: rgb(224, 224, 224);
+    font-weight: 550;
+    font-size: 1.2rem;
 }
 
 

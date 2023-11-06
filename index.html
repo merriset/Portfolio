@@ -22,12 +22,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@1&family=Sarabun:wght@700&display=swap" rel="stylesheet">
 
     
 </head>
-<body onscroll="scrollWitness()" onload="loadRSize()">
+<body onscroll="scrollWitness()">
 
     <div id="portraitBanner">
         <div id="nameHeader">
@@ -41,66 +45,85 @@
         <div class="link"><a href="./resume.html">RESUME</a></div>
         <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('projects')">PROJECTS</button>
         <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('contact')">CONTACT</button>
+        <button class="link" style="background-color: rgb(241, 241, 241);" onclick="pageScroll('portraitBanner')">RETURN TO TOP</button>
     </div>
 
-    <div id="about">
-        <div id="aboutHeader"><h2>Always primed for the next idea...</h2></div>
-        <div id="aboutText">
-            <p>
-                I am a licensed pilot, SCUBA diver, professional baker, metalcraft artist, and dedicated tech geek. <br><br>
-                Following my recent graduation from the University of Oregon, I have enjoyed honing my skills and building
-                my knowledge within the wide realms of <strong>software development and hardware tinkering</strong>.<br><br>
-                I believe that ethical, emergent technologies have the potential to build a brilliant human future. 
-            </p>
+    <div id="aboutBanner">
+        <div style="padding: 50px;">
+            <h2>My Background</h2>
+            <img style="display: block; margin: auto; padding-top: 15px;" alt="underline image" src="./assets/logos/underLine.png">
+            <div id="aboutText">
+                <p>
+                    I am a licensed pilot, SCUBA diver, professional baker, metalcraft artist, and dedicated tech geek. <br><br>
+                    Following my recent graduation from the University of Oregon, I have enjoyed honing my skills and building
+                    my knowledge within the wide realms of <strong>software development and hardware tinkering</strong>.<br><br>
+                    I believe that ethical, emergent technologies have the potential to build a brilliant human future. 
+                </p>
+            </div>
         </div>
+        <div>
+            <h2>My Presence</h2>
+            <img style="padding-bottom: 20px; display: block; margin: auto; padding-top: 15px;" alt="underline image" src="./assets/logos/underLine.png">
+            <div style="padding: 10px; display: flex; justify-content: space-evenly; align-items: center; justify-content: center;">
+                <img class="abBannImg" alt="linkedin logo" src="./assets/logos/linkedin-icon.png">
+                <h3 style="margin: 0; padding-left: 10px;">Linkedin</h3>
+            </div>
+            <div style="padding: 10px; display: flex; justify-content: space-evenly; align-items: center; justify-content: center;">
+                <img class="abBannImg" alt="github logo" src="./assets/logos/GitHub.png">
+                <h3 style="margin: 0; padding-left: 10px;">GitHub</h3>
+            </div>
+            <div style="padding: 10px; display: flex; justify-content: space-evenly; align-items: center; justify-content: center;">
+                <img class="abBannImg" alt="bitbucket logo" src="./assets/logos/bitb.png">
+                <h3 style="margin: 0; padding-left: 10px;">Bitbucket</h3>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="certContainer">
+        <div class="cert">
+            <img class="certImg" src="./assets/logos/University_Of_Oregon_Logo.jpg" alt="university of oregon logo">
+            <p style="color: rgb(1, 81, 0);"><strong>Graduated with a Bachelor's degree in Science and a major in Computer Science</strong></p>
+        </div>
+
+        <div class="cert">
+            <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/logos/freeport.jpg" alt="freeport bakery logo">
+            <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/logos/brick.jpg" alt="brickmaiden breads logo">
+            <p style="color: rgb(1, 81, 0);"><strong>Professional Bakery Experience</strong></p>
+        </div>
+
+        <div class="cert">
+            <img class="certImg" src="./assets/logos/arc.jpg" alt="american river college logo">
+            <p style="color: rgb(1, 81, 0);"><strong>Completed an Associate's degree in the field of Electrical Systems Technology</strong></p>
+        </div>
+
+        <div class="cert">
+            <img class="certImg" src="./assets/logos/faa.jpg" alt="FAA logo">
+            <p style="color: rgb(1, 81, 0);"><strong>Finished flight school with an ASEL Private Pilot's Certificate</strong></p>
+        </div>
+
         
-    </div>
 
-
-    <div id="certs">
-        <div id="certContainer">
-            <div class="cert">
-                <img class="certImg" src="./assets/uofo.png" alt="university of oregon logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Graduated with a Bachelor's degree in Science and a major in Computer Science</strong></p>
-            </div>
-
-            <div class="cert">
-                <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/freeport.png" alt="freeport bakery logo">
-                <img class="certImg" style="display: inline-block; width: 150px;" src="./assets/brick.png" alt="brickmaiden breads logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Professional Bakery Experience</strong></p>
-            </div>
-
-            <div class="cert">
-                <img class="certImg" src="./assets/arc.png" alt="american river college logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Completed an Associate's degree in the field of Electrical Systems Technology</strong></p>
-            </div>
-
-            <div class="cert">
-                <img class="certImg" src="./assets/faa.png" alt="FAA logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Finished flight school with an ASEL Private Pilot's Certificate</strong></p>
-            </div>
-
-            
-
-            <div class="cert">
-                <img class="certImg" src="./assets/goethe.png" alt="goethe logo">
-                <p style="color: rgb(1, 81, 0);"><strong>Passed the German A1 proficiency exam</strong></p>
-            </div>
-
-            <div class="cert">
-                <img class="certImg" src="./assets/Diver-flag-with-black-diver.png" alt="diving flag">
-                <p style="color: rgb(1, 81, 0);"><strong>Aquired the PADI Open Water Diver certification</strong></p>
-            </div>
-            
+        <div class="cert">
+            <img class="certImg" src="./assets/logos/goethe-logo.jpg" alt="goethe logo">
+            <p style="color: rgb(1, 81, 0);"><strong>Passed the German A1 proficiency exam</strong></p>
         </div>
+
+        <div class="cert">
+            <img class="certImg" src="./assets/logos/dive.jpg" alt="diving flag">
+            <p style="color: rgb(1, 81, 0);"><strong>Aquired the PADI Open Water Diver certification</strong></p>
+        </div> 
     </div>
 
     <div id="projects">
         <div id="projectContainer">
+            <h2 style="color: rgb(224, 224, 224);">My Projects</h2>
+            <img style="display: block; margin: auto; padding-top: 15px;" alt="underline image" src="./assets/logos/underLine.png">
             <div class="project">
-                <img src="./assets/webGPU.png" alt="webGPU logo" style="margin: 60px auto 20px auto; display: block; height: auto; width: 180px;">
-                <h2 style="font-family: Noto Sans;">Research and Application</h2>
-                <h3><a style="color: red;" href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
+                <img src="./assets/logos/webGPU.png" alt="webGPU logo" style="margin: 60px auto 20px auto; display: block; height: auto; width: 180px;">
+                <h2 style="font-family: Noto Sans; color: rgb(224, 224, 224);">Research and Application</h2>
+                <h3><a style="color: rgb(180, 63, 63);" href="https://github.com/merriset/webGPU">Github Link</a></h3><br>
                 <button type="button" class="collapse"> 
                     What is webGPU? Click Here
                 </button> 
@@ -111,7 +134,7 @@
                         to the OpenGL and WebGL APIs.<br><br> WebGPU functions as an interface between the host system’s GPU and the 
                         developer, allowing for <strong>compute and render commands</strong> to be sent to the GPU from native apps and web browsers. 
                         It has many exciting applications in game engines, web development, machine learning, data visualization, and more.<br><br>
-                        For more information, try this link: <a style="text-decoration: underline;" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">Mozilla WebGPU Documentation</a>
+                        For more information, try this link: <a style="text-decoration: underline; color: rgb(175, 115, 115);" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">Mozilla WebGPU Documentation</a>
                     </p>  
                 </div>
 
@@ -129,7 +152,7 @@
 
                 </script>
                 
-                <ul style="margin: 30px auto 30px auto; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; background-color: white;">
+                <ul style="margin: 30px auto 30px auto;">
                     <li>Research project in cooperation with the University of Oregon CS department (Summer 2023)</li>
                     <li>Goal of evaluating webGPU’s capabilities as a <strong>data visualization medium</strong></li>
                     <li>Project is on-going, I will take webGPU further as a full web application</li>
@@ -141,9 +164,9 @@
 
             <div class="project">
                 <br><br><br><br>
-                <h2 style="font-family: Noto Sans;">Rasterizer in C</h2>
-                <h3><a style="color: red;" href="https://bitbucket.org/trimercade/graphics">Bitbucket Link</a></h3><br>
-                <ul style="margin: 10px auto 30px auto; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; background-color: white;">
+                <h2 style="font-family: Noto Sans; color: rgb(224, 224, 224);">Rasterizer in C</h2>
+                <h3><a style="color: rgb(180, 63, 63);" href="https://bitbucket.org/trimercade/graphics">Bitbucket Link</a></h3><br>
+                <ul style="margin: 10px auto 30px auto;">
                     <li>From scratch C language rasterizer for the purpose of 3d and 2d rendering</li>
                     <li>Exploration of <strong>C, vector math, rasterization methodology</strong></li>
                 </ul> 
@@ -152,9 +175,9 @@
 
             <div class="project">
                 <br><br><br><br>
-                <h2 style="font-family: Noto Sans;">Operating Systems Projects</h2>
-                <h3><a style="color: red;" href="https://bitbucket.org/trimercade/operating-systems">Bitbucket Link</a></h3><br>
-                <ul style="margin: 10px auto 30px auto; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; background-color: white;">
+                <h2 style="font-family: Noto Sans; color: rgb(224, 224, 224);">Operating Systems Projects</h2>
+                <h3><a style="color: rgb(180, 63, 63);" href="https://bitbucket.org/trimercade/operating-systems">Bitbucket Link</a></h3><br>
+                <ul style="margin: 10px auto 30px auto;">
                     <li>Assigned work from Univeristy of Oregon Operating Systems course</li>
                     <li>Exploration of <strong>C, parallel computing, OS architecture</strong></li>
                 </ul> 
@@ -164,8 +187,8 @@
     </div>
 
     <div id="contact">
-        <br><br><br><br>
-        <h2>Contact Me!</h2>
+        <br><br><br><br><br>
+        <h2>CONTACT ME</h2>
         <h3>peternelson-work@proton.me</h3>
     </div>
 
