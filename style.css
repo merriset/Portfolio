@@ -6,7 +6,7 @@ a {
 #aboutBanner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: baseline;
     height: auto;
     width: calc(100vw - (100vw - 100%));
